@@ -1,0 +1,136 @@
+main {
+  padding-top: 0;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  padding-top: 120px;
+  background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero .hero-content {
+  position: relative;
+  z-index: 2;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.hero p {
+  font-size: 1.25rem;
+}
+.hero .highlight {
+  background: linear-gradient(90deg, #888, #fff);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* 히어로 섹션 버튼 커스텀 스타일 */
+.hero .btn.btn-primary {
+  background-color: #1a237e; /* 남색에 가까운 파란색 */
+  border-color: #1a237e;
+  border-radius: 50px; /* 더 둥글게 (알약 모양) */
+  padding: 0.8rem 2.5rem; /* 패딩 조정 */
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.hero .btn.btn-primary:hover {
+  background-color: #283593; /* 호버 시 약간 밝은 색 */
+  border-color: #283593;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Slide Show Section */
+#slide-section {
+  padding: 80px 0;
+}
+.slide-container {
+  position: relative;
+  max-width: 900px;
+  min-height: 250px;
+  margin: auto;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 4rem;
+  transition: opacity 0.3s ease-in-out;
+  text-align: center;
+}
+.slide-container .slide-text {
+  width: 100%;
+}
+.slide-container h2 {
+  font-weight: 700;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+.slide-container p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+.slide-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.slide-button:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.slide-button.left {
+  left: 10px;
+}
+.slide-button.right {
+  right: 10px;
+}
+
+@media (max-width: 768px) {
+  .slide-container {
+    padding: 2rem;
+  }
+}

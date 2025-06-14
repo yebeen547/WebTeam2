@@ -1,0 +1,36 @@
+main {
+  padding-top: 140px;
+}
+
+/* 테이블 헤더 스타일 */
+.table thead th {
+  background-color: #343a40;
+  color: white;
+  font-weight: 600;
+  vertical-align: middle;
+}
+
+/* 테이블 셀 공통 스타일 */
+.table tbody td {
+  vertical-align: middle;
+  font-size: 0.95rem;
+}
+
+.table .logo-cell {
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-align: center; /*  중앙 정렬 */
+}
+
+/* 가격 셀 스타일 */
+.price {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #007bff;
+}
+
+/* 카테고리 뱃지 스타일 */
+.badge {
+  font-size: 0.8rem;
+  padding: 0.4em 0.7em;
+}

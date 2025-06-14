@@ -1,0 +1,47 @@
+main {
+  padding-top: 140px;
+}
+.ai-detail-layout {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* [수정됨] 이미지에 transition 효과 추가 */
+.ai-detail-layout img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  object-fit: contain;
+  margin: auto;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.ai-image-link:hover img {
+  opacity: 0.8;
+}
+
+.ai-detail-layout h2 {
+  font-weight: 700;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.feature-section {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-top: 3rem;
+}
+.feature-section h3 {
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+.feature-box p:last-child {
+  margin-bottom: 0;
+}
+.target-user-title {
+  text-align: center;
+  margin-bottom: 1rem;
+}

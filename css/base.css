@@ -1,0 +1,54 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* 모든 페이지 공통 기본 스타일 */
+body {
+  /* Poppins 폰트를 기본으로 사용 */
+  font-family: 'Poppins', sans-serif !important;
+  background-color: #f9f9f9;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1; /* 푸터를 하단에 고정시키기 위함 */
+  /* 헤더 높이(120px)보다 넉넉하게 콘텐츠에 상단 여백을 줍니다. */
+  padding-top: 140px;
+}
+
+/* 공통 헤더 스타일 */
+header .navbar-brand {
+  font-weight: 700;
+  font-size: 1.8rem;
+  font-family: 'Poppins', sans-serif; /* 로고는 Poppins 폰트 유지 */
+}
+
+header .nav-link {
+  font-family: 'Do Hyeon', sans-serif; /* 폰트 적용 */
+  font-size: 1.3rem; /* 새 폰트에 맞는 크기로 조정 */
+  font-weight: 400;
+  transition: color 0.3s ease;
+  padding-bottom: 0; /* 폰트 위치 미세 조정 */
+}
+header .nav-link:hover,
+header .nav-link.active {
+  color: #8ab7fa !important;
+}
+
+/* 공통 푸터 스타일 */
+footer {
+  padding: 2rem 0;
+  background-color: #e9ecef;
+  color: #666;
+  margin-top: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI 뉴스 - DevWithAI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/news.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-light bg-white pt-3 pb-2 fixed-top">
+        <div class="container justify-content-center">
+          <a class="navbar-brand" href="/index.html">DevWithAI</a>
+        </div>
+      </nav>
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-white pt-0 pb-2 fixed-top"
+        style="margin-top: 60px"
+      >
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler mx-auto border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/ai.html">AI Pedia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/news.html">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/compare.html">AI-Vs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/team.html">TEAM</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="app">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-9">
+            <ul class="art_list">
+              <li>
+                <div class="thumb">
+                  <a
+                    href="https://www.itworld.co.kr/article/4006353"
+                    target="_blank"
+                    ><img
+                      src="https://www.itworld.co.kr/wp-content/uploads/2025/06/4006353-0-57329100-1749776158-Apple-WWDC25-macOS-Tahoe-26-Xcode-26-with-ChatGPT-250609.jpg?resize=1240%2C826&quality=50&strip=all"
+                      alt="apple"
+                  /></a>
+                </div>
+                <dl>
+                  <dt>
+                    <a
+                      href="https://www.itworld.co.kr/article/4006353"
+                      target="_blank"
+                      >엑스코드 26에 챗GPT 통합… 애플, AI로 개발자 생산성 향상
+                      지원</a
+                    >
+                  </dt>
+                  <dd class="text">
+                    애플은 이번 주 개최한 WWDC에서 엑스코드(Xcode) 내에서
+                    챗GPT와 같은 서드파티 LLM을 지원하는 기능을 발표했다. 이는
+                    앱 개발 속도를 높이고 개발자에게 실질적인 도움이 될 수 있는
+                    기능으로, 베타 버전에서 즉시 사용할 수 있다는 특징을 가진다.
+                  </dd>
+                </dl>
+              </li>
+              <li>
+                <div class="thumb">
+                  <a
+                    href="https://www.aitimes.com/news/articleView.html?idxno=165479"
+                    target="_blank"
+                    ><img
+                      src="https://cdn.aitimes.com/news/photo/202411/165479_179625_3551.jpg"
+                      alt="문라이트"
+                  /></a>
+                </div>
+                <dl>
+                  <dt>
+                    <a
+                      href="https://www.aitimes.com/news/articleView.html?idxno=165479"
+                      target="_blank"
+                      >코르카, AI 문서 분석 ‘문라이트’ 글로벌 출시</a
+                    >
+                  </dt>
+                  <dd class="text">
+                    문라이트는 PDF 버전의 논문 요약과 번역 기능과 대화 기능을
+                    탑재한 AI 논문 분석 솔루션으로, 2024 7월 구글 크롬 익스텐션
+                    버전으로 선보였으며, 글로벌 론칭과 함께 웹 버전을 출시했다.
+                  </dd>
+                </dl>
+              </li>
+              <li>
+                <div class="thumb">
+                  <a
+                    href="https://www.aitimes.com/news/articleView.html?idxno=169619"
+                    target="_blank"
+                    ><img
+                      src="https://cdn.aitimes.com/news/photo/202504/169619_185279_446.jpeg"
+                      alt="로고"
+                  /></a>
+                </div>
+                <dl>
+                  <dt>
+                    <a
+                      href="https://cdn.aitimes.com/news/photo/202504/169619_185279_446.jpeg"
+                      target="_blank"
+                      >오픈AI, 코딩 강화한 개발자용 'GPT-4.1' API 출시</a
+                    >
+                  </dt>
+                  <dd class="text">
+                    오픈AI가 소프트웨어 개발자를 위한 새로운 모델 'GPT-4.1'을
+                    API로 출시했다. 이를 통해 타사보다 떨어졌던 코딩 성능을 끌어
+                    올려, 향후 출시할 코딩 전문 인공지능(AI) 에이전트를 위한
+                    기반을 마련하기 위한 것으로 보인다.
+                  </dd>
+                </dl>
+              </li>
+              <li>
+                <div class="thumb">
+                  <a
+                    href="https://zdnet.co.kr/view/?no=20250522153643"
+                    target="_blank"
+                    ><img
+                      src="https://image.zdnet.co.kr/2025/05/22/ab481d3b7aa47280de1c20d6e849764e.png"
+                      alt="발표 사진"
+                  /></a>
+                </div>
+                <dl>
+                  <dt>
+                    <a
+                      href="https://zdnet.co.kr/view/?no=20250522153643"
+                      target="_blank"
+                      >로컬 AI 개발 생태계 지원"…MS, '윈도 AI 파운드리' 공개</a
+                    >
+                  </dt>
+                  <dd class="text">
+                    마이크로소프트가 인공지능(AI) 개발 전 과정을 클라우드뿐
+                    아니라 사용자 PC에서도 이용 가능한 플랫폼을 선보여 로컬 AI
+                    개발 생태계 확장에 나섰다. 마이크로소프트는 한국 시간으로
+                    22일까지 미국 새너자이에서 열린 개발자 행사 '마이크로소프트
+                    빌드 2025'에서 '윈도 AI 파운드리'를 출시했다.
+                  </dd>
+                </dl>
+              </li>
+              <li>
+                <div class="thumb">
+                  <a href="https://www.cio.com/article/3828646/" target="_blank"
+                    ><img
+                      src="https://www.cio.com/wp-content/uploads/2025/02/3828646-0-96041500-1740028133-WHAM.jpg?quality=50&strip=all"
+                      alt="구글 검색"
+                  /></a>
+                </div>
+                <dl>
+                  <dt>
+                    <a
+                      href="https://www.cio.com/article/3828646/"
+                      target="_blank"
+                      >MS, 게임 개발용 AI 모델 ‘뮤즈’ 공개··· 7년치 게임
+                      데이터로 학습</a
+                    >
+                  </dt>
+                  <dd class="text">
+                    MS 뮤즈가 게임 개발용 AI 모델을 공개하였다. MS가 직접 개발한
+                    WHAM은 게임의 시각적 요소와 동작을 모두 만들어낼 수 있다.
+                    개발자는 이를 통해 게임 속 캐릭터와 배경, 효과를 생성할 수
+                    있고, 플레이어가 컨트롤러나 키보드를 조작할 때 캐릭터가
+                    보여줄 반응과 움직임까지 설계할 수 있다.
+                  </dd>
+                </dl>
+              </li>
+              <li>
+                <div class="thumb">
+                  <a
+                    href="https://www.hani.co.kr/arti/hanihealth/pharm/1168649.html"
+                    target="_blank"
+                    ><img
+                      src="https://flexible.img.hani.co.kr/flexible/normal/970/680/imgdb/original/2024/1120/20241120503763.webp"
+                      alt="신약 개발"
+                  /></a>
+                </div>
+                <dl>
+                  <dt>
+                    <a
+                      href="https://www.hani.co.kr/arti/hanihealth/pharm/1168649.html"
+                      target="_blank"
+                      >AI가 몰고 온 ‘제약 혁신’…“단축된 개발 시간, 연장된 생명의
+                      시간”</a
+                    >
+                  </dt>
+                  <dd class="text">
+                    건강환경이 빠르게 변화하고 있다. 무엇보다 노인 인구가
+                    늘어나는 가운데 인공지능(AI), 정보통신기술(ICT), 빅데이터,
+                    바이오 등 기술 변화가 빨라졌기 때문이다.
+                  </dd>
+                </dl>
+              </li>
+              <li>
+                <div class="thumb">
+                  <a
+                    href="https://www.yna.co.kr/view/AKR20240222006400075"
+                    target="_blank"
+                    ><img
+                      src="https://img7.yna.co.kr/photo/reuters/2024/02/22/PRU20240222005501009_P4.jpg"
+                      alt="영상"
+                  /></a>
+                </div>
+                <dl>
+                  <dt>
+                    <a
+                      href="https://www.yna.co.kr/view/AKR20240222006400075"
+                      target="_blank"
+                      >구글, AI 챗봇 개발용 언어모델 '젬마' 오픈소스로 공개</a
+                    >
+                  </dt>
+                  <dd class="text">
+                    구글이 인공지능(AI) 챗봇을 개발할 수 있는 대규모
+                    언어모델(LLM)의 가벼운 버전을 외부 개발자들이 이용할 수
+                    있도록 개방했다. '젬마'(Gemma)로 명명된 이 모델은 구글의
+                    주력 AI 모델인 '제미나이'를 만드는 데 사용된 것과 같은
+                    기술로 구축된 경량 최첨단 모델이라고 구글 측은 설명했다.
+                  </dd>
+                </dl>
+              </li>
+              <li>
+                <div class="thumb">
+                  <a href="https://www.cio.com/article/4003494/" target="_blank"
+                    ><img
+                      src="https://www.cio.com/wp-content/uploads/2025/06/4003494-0-19291400-1749455104-GitHub_Copilot.jpg?resize=1240%2C826&quality=50&strip=all"
+                      alt="깃허브 에이전트"
+                  /></a>
+                </div>
+                <dl>
+                  <dt>
+                    <a
+                      href="https://www.cio.com/article/4003494/"
+                      target="_blank"
+                      >깃허브 “AI, 엔터프라이즈 소프트웨어 개발의 핵심 동력으로
+                      부상”</a
+                    >
+                  </dt>
+                  <dd class="text">
+                    깃허브는 에이전트 도입이 팀의 데브옵스 역량을 한층 끌어올릴
+                    수 있다고 설명했다. 에이전트는 버그 수정부터 디펜던시
+                    업그레이드까지 다양한 개발 업무를 지원하며 생산성을 높인다.
+                  </dd>
+                </dl>
+              </li>
+              <li>
+                <div class="thumb">
+                  <a
+                    href="https://www.ilovepc.co.kr/news/articleView.html?idxno=54753"
+                    target="_blank"
+                    ><img
+                      src="https://www.ilovepc.co.kr/news/photo/202506/54753_149347_3034.jpeg"
+                      alt="노트북"
+                  /></a>
+                </div>
+                <dl>
+                  <dt>
+                    <a
+                      href="https://www.ilovepc.co.kr/news/articleView.html?idxno=54753"
+                      target="_blank"
+                      >‘챗GPT 금지령’ 삼성전자… 자체 AI 코딩 도입</a
+                    >
+                  </dt>
+                  <dd class="text">
+                    삼성전자 등 국내 정보기술(IT) 대기업들이 자체 개발한 생성형
+                    인공지능(AI)을 사내에 도입하며, 외부 AI 도구 사용을 전면
+                    제한했던 과거 기조에서 전략 전환에 나섰다.
+                  </dd>
+                </dl>
+              </li>
+              <li>
+                <div class="thumb">
+                  <a
+                    href="https://www.itworld.co.kr/news/340079"
+                    target="_blank"
+                    ><img
+                      src="https://www.itworld.co.kr/wp-content/uploads/2025/06/4005550-0-83303700-1749688514-Der-Siegeszug-von-GenAI-Business-Apps-geht-weiter.jpg?resize=1240%2C697&quality=50&strip=all"
+                      alt="소버린 ai"
+                  /></a>
+                </div>
+                <dl>
+                  <dt>
+                    <a
+                      href="https://www.itworld.co.kr/article/4005550"
+                      target="_blank"
+                      >엔비디아 “소버린 AI, 디지털 업무 방식 변화시킬 것”</a
+                    >
+                  </dt>
+                  <dd class="text">
+                    엔비디아 경영진은 생성형 AI가 각국의 정책과 규제에 맞춰
+                    발전함에 따라, 이를 기반으로 한 소버린 AI(Sovereign AI)가
+                    디지털 업무 방식을 바꿀 잠재력이 있다고 보고 있다.
+                    엔비디아의 생성형 AI 소프트웨어 부문 부사장 카리 브리스키는
+                    개발자 행사를 앞두고 열린 브리핑에서 “AI는 전기와 인터넷처럼
+                    빠르게 핵심 인프라로 자리잡고 있다”라고 말했다.
+                  </dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <aside class="sidebar">
+              <h3 class="sub-tit">대표 뉴스</h3>
+              <div id="next" class="auto-article">
+                <div class="item">
+                  <a
+                    href="https://www.itworld.co.kr/article/4006353"
+                    target="_blank"
+                    >엑스코드 26에 챗GPT 통합… 애플, AI로 개발자 생산성 향상
+                    지원</a
+                  >
+                </div>
+                <div class="item">
+                  <a
+                    href="https://www.aitimes.com/news/articleView.html?idxno=165479"
+                    target="_blank"
+                    >코르카, AI 문서 분석 ‘문라이트’ 글로벌 출시</a
+                  >
+                </div>
+                <div class="item">
+                  <a
+                    href="https://www.aitimes.com/news/articleView.html?idxno=169619"
+                    target="_blank"
+                    >오픈AI, 코딩 강화한 개발자용 'GPT-4.1' API 출시</a
+                  >
+                </div>
+                <div class="item">
+                  <a
+                    href="https://zdnet.co.kr/view/?no=20250522153643"
+                    target="_blank"
+                    >로컬 AI 개발 생태계 지원"…MS, '윈도 AI 파운드리' 공개</a
+                  >
+                </div>
+                <div class="item">
+                  <a href="https://www.cio.com/article/3828646/" target="_blank"
+                    >MS, 게임 개발용 AI 모델 ‘뮤즈’ 공개··· 7년치 게임 데이터로
+                    학습</a
+                  >
+                </div>
+                <div class="item">
+                  <a
+                    href="https://www.hani.co.kr/arti/hanihealth/pharm/1168649.html"
+                    target="_blank"
+                    >AI가 몰고 온 ‘제약 혁신’…“단축된 개발 시간, 연장된 생명의
+                    시간”</a
+                  >
+                </div>
+                <div class="item">
+                  <a
+                    href="https://www.yna.co.kr/view/AKR20240222006400075"
+                    target="_blank"
+                    >구글, AI 챗봇 개발용 언어모델 '젬마' 오픈소스로 공개</a
+                  >
+                </div>
+                <div class="item">
+                  <a href="https://www.cio.com/article/4003494/" target="_blank"
+                    >깃허브 “AI, 엔터프라이즈 소프트웨어 개발의 핵심 동력으로
+                    부상”</a
+                  >
+                </div>
+                <div class="item">
+                  <a
+                    href="https://www.ilovepc.co.kr/news/articleView.html?idxno=54753"
+                    target="_blank"
+                    >A‘챗GPT 금지령’ 삼성전자… 자체 AI 코딩 도입</a
+                  >
+                </div>
+                <div class="item">
+                  <a
+                    href="https://www.itworld.co.kr/article/4005550"
+                    target="_blank"
+                    >엔비디아 “소버린 AI, 디지털 업무 방식 변화시킬 것”</a
+                  >
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p class="text-center mb-0">© 2025 Team DevWithAI.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/news.js"></script>
+  </body>
+</html>

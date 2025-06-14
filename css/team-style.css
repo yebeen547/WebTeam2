@@ -1,0 +1,165 @@
+main {
+  padding-top: 140px;
+}
+.content-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 3rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+/* 프로젝트 소개 */
+.web-title,
+.project-details {
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+.web-title h1 {
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+.web-title h3 {
+  font-size: 1.3rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+.web-title p {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 1rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 프로젝트 상세 정보 */
+.project-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  text-align: left;
+}
+.detail-item h4 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  border-left: 4px solid #0d6efd;
+  padding-left: 0.75rem;
+}
+.detail-item p,
+.detail-item ul {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.7;
+}
+.detail-item ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* 팀 소개 */
+.team-members-container {
+  padding-top: 1rem;
+}
+.team-members-container h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+}
+.team-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* 팀원 카드 */
+.team-card {
+  background-color: #fff; /* [수정] 기본 흰색 배경 */
+  border: 1px solid #e9ecef; /* [수정] 옅은 테두리 추가 */
+  padding: 2.5rem 2rem;
+  border-radius: 15px;
+  text-align: center;
+  width: 320px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.team-card h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+/* [수정됨] 역할(Role) 텍스트 스타일 */
+.team-card .role {
+  color: #0d6efd; /* 파란색 */
+  font-weight: 600;
+  font-style: italic; /* 눕혀진 글씨체 */
+  margin-bottom: 1.5rem;
+}
+
+.team-card .bio {
+  font-size: 0.95rem;
+  color: #6c757d;
+  min-height: 45px;
+  margin-bottom: 1.5rem;
+}
+
+/* 버튼들을 담는 컨테이너 */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* 버튼 사이 간격 */
+  margin-top: 1rem;
+}
+
+/* 공통 버튼 스타일 */
+.team-btn {
+  display: inline-block;
+  padding: 0.6rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+  border: none;
+}
+.team-btn:hover {
+  transform: translateY(-2px);
+  color: #fff;
+}
+
+/* [수정됨] 버튼 개별 스타일 */
+.team-btn.github {
+  background-color: #333;
+  color: #fff;
+}
+.team-btn.github:hover {
+  background-color: #555;
+}
+
+.team-btn.website {
+  background-color: #0d6efd;
+  color: #fff;
+}
+.team-btn.website:hover {
+  background-color: #0b5ed7;
+}
